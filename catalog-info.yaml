@@ -1,0 +1,25 @@
+# Gerado por fernando-moretes/platform. Não edite aqui: mude no orquestrador e
+# rode `make rollout`. É o que o Backstage (backstage.home.lab) lê deste repo.
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ref-architect-frameworks-hub
+  description: Reference hub for AWS Well-Architected, TOGAF, C4, ArchiMate, DDD, 12-Factor and Cynefin.
+  annotations:
+    github.com/project-slug: fernandofatech/ref-architect-frameworks-hub
+    backstage.io/source-location: url:https://github.com/fernandofatech/ref-architect-frameworks-hub
+    sonarqube.org/project-key: ref-architect-frameworks-hub
+  links:
+    - url: https://github.com/fernandofatech/ref-architect-frameworks-hub/actions
+      title: Actions
+      icon: github
+    - url: https://sonarqube.home.lab/dashboard?id=ref-architect-frameworks-hub
+      title: SonarQube
+    - url: https://defectdojo.home.lab/product?name=ref-architect-frameworks-hub
+      title: DefectDojo
+  tags: [documentation, ci-node.yml]
+spec:
+  type: documentation
+  lifecycle: experimental
+  owner: group:plataforma
+  system: homelab
