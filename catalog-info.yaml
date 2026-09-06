@@ -4,7 +4,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: ref-architect-frameworks-hub
-  description: Reference hub for AWS Well-Architected, TOGAF, C4, ArchiMate, DDD, 12-Factor and Cynefin.
+  description: "Reference hub for AWS Well-Architected, TOGAF, C4, ArchiMate, DDD, 12-Factor and Cynefin."
   annotations:
     github.com/project-slug: fernandofatech/ref-architect-frameworks-hub
     backstage.io/source-location: url:https://github.com/fernandofatech/ref-architect-frameworks-hub
@@ -17,7 +17,9 @@ metadata:
       title: SonarQube
     - url: https://defectdojo.home.lab/product?name=ref-architect-frameworks-hub
       title: DefectDojo
-  tags: [documentation, ci-node.yml]
+  # tags so aceitam [a-z0-9-]: ci-node.yml (ci-node.yml) tem ponto e reprovava
+  # todo componente na policy check do Backstage.
+  tags: [documentation, node]
 spec:
   type: documentation
   lifecycle: experimental
